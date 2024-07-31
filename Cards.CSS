@@ -1,0 +1,67 @@
+body{
+    background-image: url('Media/CardsBg.png');
+    background-repeat: repeat;
+    background-size: 350px;
+    
+}
+nav{
+    background-color: rgba(173, 173, 36, 0.445);
+    overflow: hidden;
+    display: inline-block;
+    
+   
+    
+}
+.phar{
+    border-radius: 100%;
+    width: 200px;
+}
+nav h1{
+    font-size: 18px;
+    
+}
+
+
+.column{
+    margin: 20px;
+    padding: 10px;
+}
+.card{
+    background-color: rgba(146, 146, 56, 0.644);
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+img{
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgba(90, 101, 196, 0.281);
+    
+    
+}
+nav:hover{
+    animation-name: rana;
+    animation-duration: 10s;
+}
+
+@keyframes rana {
+     0% {
+ transform: scale(1);
+}
+100% {
+ transform: scale(0.5);
+    }
+}
+

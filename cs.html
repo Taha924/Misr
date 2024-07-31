@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Playwrite+NZ&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* إعادة تعيين الأسلوب الأساسي */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        /* إعداد الجسم */
+        body {
+            background-image: url('Media/CardsBg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: bgfade 2s;
+            height: 100vh;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #333; /* لون النص الأساسي */
+        }
+        
+        /* تخطيط قائمة التنقل */
+        nav {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة قليلاً */
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+    
+        
+        /* تنسيق شبكة الصور */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 20px;
+        }
+        
+        .container a {
+            flex: 1 1 calc(33.33% - 20px);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .container a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container a img {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* تنسيق الأزرار */
+        .back-button {
+            background-color: brown;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s, border 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #d35400;
+            border: 2px solid #e67e22;
+        }
+        
+        /* تأثير التلاشي */
+        @keyframes bgfade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        /* تحسين العرض التكيفي */
+        @media (max-width: 768px) {
+            .container a {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container a {
+                flex: 1 1 100%;
+            }
+        }
+        </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <a href="an.html"><img src="Media/aswantxt.png" alt="Aswan"></a>
+        <a href="cairo.html"><img src="Media/cairotxt.png" alt="Cairo"></a>
+        <a href="ha.html"><img src="Media/hurghadatxt.png" alt="Hurghada"></a>
+        <a href="lr.html"><img src="Media/luxortxt.png" alt="Luxor"></a>
+        <a href="sm.html"><img src="Media/sharmtxt.png" alt="Sharm El Sheikh"></a>
+        <a href="alex.html"><img src="Media/alextxt.png" alt="Alex"></a>
+    </div>
+    <a href="home.html">
+        <button type="button" class="back-button">Back</button>
+    </a>
+</body>
+</html>
+
